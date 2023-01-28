@@ -1,5 +1,66 @@
-p {
-    font-style: bold;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+*{
+    box-sizing: border-box;
 }
+
+
+
+.row{
+    width: 100%;
+}
+
+.row div{
+    background-color: aqua;
+}
+
+h1{
+    position: absolute;
+    bottom: 60%;
+    left: 60%;
+    font-size: 2em;
+
+
+
+}
+
+div.col-desk-4{
+    position: relative;
+}
+
+@media (min-width: 992px)  {
+    div.col-desk-4,div.col-tab-6,div.col-mob-12{
+        float: left;
+        border: 5px solid black;
+        padding:5% ;
+    }
+    div.col-desk-4{
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px)  {
+div.col-desk-4,div.col-tab-6,div.col-mob-12{
+    float: left;
+    border: 5px solid black;
+    padding:5% ;
+}
+div.col-tab-6{
+    width: 50%;
+}
+div.col-mob-12{
+    width: 100%;
+}
+}
+
+
+@media (max-width: 767px)  {
+div.col-desk-4,div.col-tab-6,div.col-mob-12{
+    float: left;
+    border: 5px solid black;
+    padding:5% ;  
+}
+div.col-desk-4{
+    width: 100%;
+}
+} 
+
+
